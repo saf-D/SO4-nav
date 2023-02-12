@@ -1,13 +1,13 @@
 
 
 export const Sorted
-    = '#3CB371';
+    = '#00FF00';
 
 export const Unsorted
-    = '#DC143C';
+    = '#FF3333';
 
 export const Alpha
-    = '#FFFF00';
+    = '#FFFF33';
 
 export const Beta
-    = '#0096FF';
+    = '#3399FF';
