@@ -1,0 +1,194 @@
+*{
+	list-style: none;
+}
+html,body{ 
+	width: 100%;
+	height: 100%;
+	background:#179c30;
+	margin: 0;
+	padding: 0;
+	/* -webkit-tap-highlight-color: transparent; */
+}
+/*包含以下五种的链接*/
+a {
+    text-decoration: none;
+}
+/*正常的未被访问过的链接*/
+a:link {
+    text-decoration: none;
+}
+/*已经访问过的链接*/
+a:visited {
+    text-decoration: none;
+}
+/*鼠标划过(停留)的链接*/
+/* 			a:hover {
+    text-decoration: none;
+} */
+/* 正在点击的链接，鼠标在元素上按下还没有松开*/
+a:active {
+    text-decoration: none;
+}
+/* 获得焦点的时候 鼠标松开时显示的颜色*/
+a:focus {
+    text-decoration: none;
+}
+#particles-js{
+	width: 100%;
+	height: 100%;
+	background-image: url("");
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background: #179c30;
+}
+.container{
+	position: absolute;
+	top: 1rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+	width: 45rem;
+	height: 47rem;
+	color: aliceblue;
+	/* background: #afafaf; */
+	/* float: left; */
+}
+.content{
+	margin: 0 auto;
+	width: 90%;
+	height: 40rem;
+	border-radius: .5rem;
+	background: #f8f8f8;
+}
+.main{
+	display: flex;
+	flex-direction: column;
+}
+.a-main{
+	margin: .5rem auto;
+	margin-top: 1rem;
+	width: 95%;
+	height: 5rem;
+	background: #19a334;
+	border-radius: .5rem;
+}
+.a-main h3{
+	font-size: 30px;
+	margin-top:1rem ;
+	color: aliceblue;
+}
+.g-main{
+	margin: .5rem auto;
+	margin-top: 1rem;
+	width: 95%;
+	height: 5rem;
+	background: #bcbcbc;
+	border-radius: .5rem;
+	/* border-bottom: .1rem solid gray; */
+}
+.g-main span{
+	margin: 1rem;
+	width: 6rem;
+	height: 2.5rem;
+	border-radius: .5rem;
+	background: #19a334;
+	line-height: 2.5rem;
+	color: aliceblue;
+	float: right;
+}
+.g-main a{
+	color: aliceblue;
+}
+.wz-main{
+	margin: 1rem;
+	margin-left: .5rem;
+	width: 15rem;
+	float: left;
+}
+
+.g-main strong{
+	margin-left: 1rem;
+	font-size: 20px;
+	float: left;
+	/* color: #19a334; */
+}
+.g-main em{
+	margin-top: .2rem;
+	margin-left: .5rem;
+	font-size: 18px;
+	float: left;
+	/* color: #19a334; */
+	
+}
+.floot{
+	position: absolute;
+	bottom: 0;
+	width: 90%;
+	text-align: center;
+}
+.floot a{
+	color: aliceblue;
+}
+/**响应式布局**/
+@media (max-width:768px){
+	.container{
+		top: .5rem;
+		width: 97%;
+		height: 38rem;
+	}
+	.content{
+		width: 97%;
+		height: 30.5rem;
+	}
+	.a-main{
+		margin: .3rem auto;
+		margin-top: .7rem;
+		width: 96%;
+		height: 4rem;
+	}
+	.a-main h3{
+		font-size: 21px;
+	}
+	.g-main{
+		margin: .5rem auto;
+		margin-top: .5rem;
+		width: 96%;
+		height: 4rem;
+	}
+	.g-main span{
+		margin: 1rem;
+		width: 6rem;
+		height: 2.5rem;
+		border-radius: .5rem;
+		background: #19a334;
+		line-height: 2.5rem;
+		color: aliceblue;
+		float: right;
+	}
+	.g-main a{
+		color: aliceblue;
+	}
+	.wz-main{
+		margin: .5rem;
+		margin-left: .1rem;
+		width: 12rem;
+		float: left;
+	}
+	
+	.g-main strong{
+		margin-left: .7rem;
+		font-size: 15px;
+		float: left;
+		/* color: #19a334; */
+	}
+	.g-main em{
+		margin-top: .2rem;
+		margin-left: .5rem;
+		font-size: 15px;
+		/* color: #19a334; */
+		
+	}
+}
