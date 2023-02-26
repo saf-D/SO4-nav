@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-han">
+	<head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+		<meta charset="utf-8">
+		<title>SO4-nav</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=5.0"/>
+		<link rel="stylesheet" href="./css/new.css">
+        <link rel="shortcut icon" href="https://so4-nav.netlify.app/assets/images/favicon.png">
+	</head>
+	<body>
+		<div id="particles-js">
+		</div>
+		<div class="container">
+			<h1>icon-viewer下载页面</h1>
+			<div class="content">
+				<div class="main">
+					<div class="a-main">
+						<h3>一款图标提取工具</h3>
+					</div>
+					<div class="g-main">
+						<div class="wz-main">
+							<strong><i class="bi bi-windows"></i></strong>
+							<em>Win下载-IconViewer3.02-Setup-x64.exe</em>
+						</div>
+						<span><a target="_blank" href="https://so4-nav.netlify.app/download/icon-viewer/IconViewer3.02-Setup-x64.exe">点击下载</a></span>
+					</div>
+				</div>
+				
+				<div class="floot">
+					&copy; 2023
+                        <a href="https://so4-nav.netlify.app/"><strong>SO4-nav</strong></a> DIY by <strong>DKX</strong> | <a href="https://icp.gov.moe/?keyword=20238896" target="_blank"><strong>萌ICP备20238896号</strong></a>
+				</div>
+			</div>
+		</div>
+		<script src="./js/particles.js"></script>
+		<script src="./js/app.js"></script>
+		<script src="js/new.js"></script>
+		<!-- 锚点平滑移动 -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				 //img lazy loaded
+				 const observer = lozad();
+				 observer.observe();
+		
+				$(document).on('click', '.has-sub', function(){
+					var _this = $(this)
+					if(!$(this).hasClass('expanded')) {
+					   setTimeout(function(){
+							_this.find('ul').attr("style","")
+					   }, 300);
+					  
+					} else {
+						$('.has-sub ul').each(function(id,ele){
+							var _that = $(this)
+							if(_this.find('ul')[0] != ele) {
+								setTimeout(function(){
+									_that.attr("style","")
+								}, 300);
+							}
+						})
+					}
+				})
+				$('.user-info-menu .hidden-sm').click(function(){
+					if($('.sidebar-menu').hasClass('collapsed')) {
+						$('.has-sub.expanded > ul').attr("style","")
+					} else {
+						$('.has-sub.expanded > ul').show()
+					}
+				})
+				$("#main-menu li ul li").click(function() {
+					$(this).siblings('li').removeClass('active'); // 删除其他兄弟元素的样式
+					$(this).addClass('active'); // 添加当前元素的样式
+				});
+				$("a.smooth").click(function(ev) {
+					ev.preventDefault();
+		
+					public_vars.$mainMenu.add(public_vars.$sidebarProfile).toggleClass('mobile-is-visible');
+					ps_destroy();
+					$("html, body").animate({
+						scrollTop: $($(this).attr("href")).offset().top - 30
+					}, {
+						duration: 500,
+						easing: "swing"
+					});
+				});
+				return false;
+			});
+		
+			var href = "";
+			var pos = 0;
+			$("a.smooth").click(function(e) {
+				$("#main-menu li").each(function() {
+					$(this).removeClass("active");
+				});
+				$(this).parent("li").addClass("active");
+				e.preventDefault();
+				href = $(this).attr("href");
+				pos = $(href).position().top - 30;
+			});
+			</script>
+	</body>
+</html>
