@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-han">
+	<head>
+		<meta charset="utf-8">
+		<title>SO4-nav</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=5.0"/>
+		<link rel="stylesheet" href="./css/new.css">
+	</head>
+	<body>
+		<div id="particles-js">
+		</div>
+		<div class="container">
+			<h1>XXX下载页面</h1>
+			<div class="content">
+				<div class="main">
+					<div class="a-main">
+						<h3>你可以查看网页演示版和下载应用！</h3>
+					</div>
+					<div class="g-main">
+						<div class="wz-main">
+							<strong>最新网址1 (主域名)</strong>
+							<em>https://www.ziyuanpro.com</em>
+						</div>
+						<span><a target="_blank" href="https://www.ziyuanpro.com">点击进入</a></span>
+					</div>
+					<div class="g-main">
+						<div class="wz-main">
+							<strong>最新网址1 (主域名)</strong>
+							<em>https://www.ziyuanpro.com</em>
+						</div>
+						<span><a target="_blank" href="https://www.ziyuanpro.com">点击进入</a></span>
+					</div>
+					<div class="g-main">
+						<div class="wz-main">
+							<strong>最新网址1 (主域名)</strong>
+							<em>https://www.ziyuanpro.com</em>
+						</div>
+						<span><a target="_blank" href="https://www.ziyuanpro.com">点击进入</a></span>
+					</div>
+					<div class="g-main">
+						<div class="wz-main">
+							<strong>最新网址1 (主域名)</strong>
+							<em>https://www.ziyuanpro.com</em>
+						</div>
+						<span><a target="_blank" href="https://www.ziyuanpro.com">点击进入</a></span>
+					</div>
+					<div class="g-main">
+						<div class="wz-main">
+							<strong>最新网址1 (主域名)</strong>
+							<em>https://www.ziyuanpro.com</em>
+						</div>
+						<span><a target="_blank" href="https://www.ziyuanpro.com">点击进入</a></span>
+					</div>
+				</div>
+				
+				<div class="floot">
+					&copy; 2023
+                        <a href="https://so4-nav.netlify.app/"><strong>SO4-nav</strong></a> DIY by <strong>DKX</strong> | <a href="https://icp.gov.moe/?keyword=20238896" target="_blank"><strong>萌ICP备20238896号</strong></a>
+						<SCRIPT language=JavaScript>
+
+							<!--
+							
+							var caution = false
+							
+							function setCookie(name, value, expires, path, domain, secure) {
+							
+							var curCookie = name + "=" + escape(value) +
+							
+							((expires) ? "; expires=" + expires.toGMTString() : "") +
+							
+							((path) ? "; path=" + path : "") +
+							
+							((domain) ? "; domain=" + domain : "") +
+							
+							((secure) ? "; secure" : "")
+							
+							if (!caution || (name + "=" + escape(value)).length <= 4000)
+							
+							document.cookie = curCookie
+							
+							else
+							
+							if (confirm("Cookie exceeds 4KB and will be cut!"))
+							
+							document.cookie = curCookie
+							
+							}
+							
+							function getCookie(name) {
+							
+							var prefix = name + "="
+							
+							var cookieStartIndex = document.cookie.indexOf(prefix)
+							
+							if (cookieStartIndex == -1)
+							
+							return null
+							
+							var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
+							
+							if (cookieEndIndex == -1)
+							
+							cookieEndIndex = document.cookie.length
+							
+							return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
+							
+							}
+							
+							function deleteCookie(name, path, domain) {
+							
+							if (getCookie(name)) {
+							
+							document.cookie = name + "=" +
+							
+							((path) ? "; path=" + path : "") +
+							
+							((domain) ? "; domain=" + domain : "") +
+							
+							"; expires=Thu, 01-Jan-70 00:00:01 GMT"
+							
+							}
+							
+							}
+							
+							function fixDate(date) {
+							
+							var base = new Date(0)
+							
+							var skew = base.getTime()
+							
+							if (skew > 0)
+							
+							date.setTime(date.getTime() - skew)
+							
+							}
+							
+							var now = new Date()
+							
+							fixDate(now)
+							
+							now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000)
+							
+							var visits = getCookie("counter")
+							
+							if (!visits)
+							
+							visits = 1
+							
+							else
+							
+							visits = parseInt(visits) + 1
+							
+							setCookie("counter", visits, now)
+							
+							document.write("欢迎光临本站，您是第" + visits + "位访问者！")
+							
+							// -->
+							
+							</SCRIPT>
+				</div>
+			</div>
+		</div>
+		<script src="./js/particles.js"></script>
+		<script src="./js/app.js"></script>
+		<script src="js/new.js"></script>
+		<!-- 锚点平滑移动 -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				 //img lazy loaded
+				 const observer = lozad();
+				 observer.observe();
+		
+				$(document).on('click', '.has-sub', function(){
+					var _this = $(this)
+					if(!$(this).hasClass('expanded')) {
+					   setTimeout(function(){
+							_this.find('ul').attr("style","")
+					   }, 300);
+					  
+					} else {
+						$('.has-sub ul').each(function(id,ele){
+							var _that = $(this)
+							if(_this.find('ul')[0] != ele) {
+								setTimeout(function(){
+									_that.attr("style","")
+								}, 300);
+							}
+						})
+					}
+				})
+				$('.user-info-menu .hidden-sm').click(function(){
+					if($('.sidebar-menu').hasClass('collapsed')) {
+						$('.has-sub.expanded > ul').attr("style","")
+					} else {
+						$('.has-sub.expanded > ul').show()
+					}
+				})
+				$("#main-menu li ul li").click(function() {
+					$(this).siblings('li').removeClass('active'); // 删除其他兄弟元素的样式
+					$(this).addClass('active'); // 添加当前元素的样式
+				});
+				$("a.smooth").click(function(ev) {
+					ev.preventDefault();
+		
+					public_vars.$mainMenu.add(public_vars.$sidebarProfile).toggleClass('mobile-is-visible');
+					ps_destroy();
+					$("html, body").animate({
+						scrollTop: $($(this).attr("href")).offset().top - 30
+					}, {
+						duration: 500,
+						easing: "swing"
+					});
+				});
+				return false;
+			});
+		
+			var href = "";
+			var pos = 0;
+			$("a.smooth").click(function(e) {
+				$("#main-menu li").each(function() {
+					$(this).removeClass("active");
+				});
+				$(this).parent("li").addClass("active");
+				e.preventDefault();
+				href = $(this).attr("href");
+				pos = $(href).position().top - 30;
+			});
+			</script>
+	</body>
+</html>
